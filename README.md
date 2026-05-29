@@ -40,4 +40,4 @@ Differential Pair → Current Mirror Load → Gain Stage → Compensation Capaci
 
 ## Author
 
-Oshee
+Osheen 
