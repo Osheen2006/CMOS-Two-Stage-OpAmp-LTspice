@@ -1,0 +1,105 @@
+# Design and Simulation of a Two-Stage CMOS Operational Amplifier using LTspice
+
+## Abstract
+
+This project focuses on the design and simulation of a two-stage CMOS operational amplifier using LTspice. The objective was to understand transistor-level analog integrated circuit design, differential amplification, current mirror active loading, gain enhancement, and frequency compensation. The amplifier was simulated using DC operating point analysis and AC frequency response analysis to study its behavior and performance.
+
+## 1. Introduction
+
+Operational amplifiers are fundamental building blocks of analog integrated circuits. Modern CMOS operational amplifiers use differential input stages and active loads to achieve high gain while maintaining low power consumption. This project implements a simplified transistor-level CMOS operational amplifier architecture in LTspice.
+
+## 2. Objectives
+
+* Design a CMOS differential amplifier.
+* Implement PMOS current mirror active loads.
+* Develop a second gain stage.
+* Introduce Miller compensation.
+* Analyze operating point and frequency response.
+
+## 3. Circuit Description
+
+### Differential Pair
+
+M1 and M2 form the NMOS differential input pair. These transistors amplify the difference between the two input voltages.
+
+### Current Mirror Active Load
+
+M3 and M4 form a PMOS current mirror. The current mirror acts as an active load and converts the differential signal into a single-ended output.
+
+### Tail Current Source
+
+Current source I1 biases the differential pair and establishes the operating point.
+
+### Second Gain Stage
+
+M5 operates as a common-source amplifier and provides additional voltage gain.
+
+### Active Load
+
+Current source I2 acts as a high-resistance active load for the second stage.
+
+### Compensation Capacitor
+
+Capacitor C1 is connected between the first-stage output and final output to improve stability through Miller compensation.
+
+## 4. Simulation Setup
+
+### Supply Voltage
+
+VDD = 5 V
+
+### Tail Current
+
+I1 = 200 µA
+
+### Second Stage Load Current
+
+I2 = 20 µA
+
+### MOSFET Parameters
+
+M5: W = 500 µm, L = 1 µm
+
+### Compensation Capacitor
+
+C1 = 0.1 pF
+
+## 5. Results
+
+### DC Operating Point Analysis
+
+The operating point simulation verified proper transistor biasing and current distribution throughout the amplifier.
+
+[Insert Operating Point Screenshot]
+
+### AC Frequency Response
+
+Frequency response analysis was performed from 1 Hz to 1 GHz.
+
+[Insert AC Response Screenshot]
+
+### Transient Response
+
+A transient simulation was performed to observe time-domain amplifier behavior.
+
+[Insert Transient Response Screenshot]
+
+## 6. Challenges Encountered
+
+* Differential pair biasing issues.
+* Current mirror connectivity errors.
+* Output stage biasing problems.
+* Compensation capacitor tuning.
+* LTspice node connectivity debugging.
+
+## 7. Conclusion
+
+A transistor-level two-stage CMOS operational amplifier was successfully designed and simulated in LTspice. The project provided practical exposure to analog IC design concepts such as differential amplification, active loads, gain stages, and frequency compensation. The simulations demonstrated the behavior of the amplifier and reinforced understanding of analog circuit design techniques.
+
+## 8. Future Work
+
+* Closed-loop feedback implementation.
+* Slew-rate analysis.
+* Phase margin measurement.
+* Power consumption optimization.
+* Layout design using Cadence tools.
