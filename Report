@@ -70,19 +70,18 @@ C1 = 0.1 pF
 
 The operating point simulation verified proper transistor biasing and current distribution throughout the amplifier.
 
-[Insert Operating Point Screenshot]
 
 ### AC Frequency Response
 
 Frequency response analysis was performed from 1 Hz to 1 GHz.
 
-[Insert AC Response Screenshot]
+
 
 ### Transient Response
 
 A transient simulation was performed to observe time-domain amplifier behavior.
 
-[Insert Transient Response Screenshot]
+
 
 ## 6. Challenges Encountered
 
